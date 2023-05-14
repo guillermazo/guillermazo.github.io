@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Plantilla con imagen centrada</title>
+  <link rel="stylesheet" type="text/css" href="./src/style.css">
+  <script>
+    setTimeout(function() {
+      location.reload();
+    }, 10000); // Actualizar la página cada 1000 milisegundos (1 segundo)
+  </script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>wenas tardes jovenes.</p>
+	<div id="contenido"></div>
+
+	<script>
+	  fetch('header.html')
+	    .then(response => response.text())
+	    .then(html => {
+	      const contenidoDiv = document.getElementById('contenido');
+	      contenidoDiv.innerHTML = html;
+	    });
+	</script>
 </body>
 </html>
