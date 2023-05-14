@@ -9,16 +9,16 @@
     }, 10000); // Actualizar la página cada 1000 milisegundos (1 segundo)
   </script>--->
 </head>
-<body><!---
+<body>
 	<div id="contenido"></div>
 
 	<script>
-	  fetch('header.html')
+	  fetch('./header.html')
 	    .then(response => response.text())
 	    .then(html => {
 	      const contenidoDiv = document.getElementById('contenido');
 	      contenidoDiv.innerHTML = html;
 	    });
-	</script>-->
+	</script>
 </body>
 </html>
