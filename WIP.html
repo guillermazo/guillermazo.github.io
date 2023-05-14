@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portafolio de Conocimientos</title>
+  <meta charset="UTF-8">
+  <!--Bootstrap-->
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.min.js"></script>
+  <!--CustomCSS-->
+  <link rel="stylesheet" type="text/css" href="./src/style.css">
+</head>
+  <body>
+  	<div id="header"></div>
+  	<script>
+  	  fetch('./header.html')
+  	    .then(response => response.text())
+  	    .then(html => {
+  	      const contenidoDiv = document.getElementById('header');
+  	      contenidoDiv.innerHTML = html;
+  	    });
+  	</script>
+    <!---Contenido--->
+    <div class="container mb-5">
+      <H1>Work In Progress</H1>
+      <H1>LAMENTO LAS MOLESTIAS</H1>
+    </div>
+    <!---Footer--->
+    <div id="footer"></div>
+    <script>
+      fetch('./footer.html')
+        .then(response => response.text())
+        .then(html => {
+          const contenidoDiv = document.getElementById('footer');
+          contenidoDiv.innerHTML = html;
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portafolio Profesional</title>
+  <meta charset="UTF-8">
+  <!--Bootstrap-->
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.min.js"></script>
+  <!--CustomCSS-->
+  <link rel="stylesheet" type="text/css" href="./src/style.css">
+</head>
+  <body>
+  	<div id="header"></div>
+  	<script>
+  	  fetch('./header.html')
+  	    .then(response => response.text())
+  	    .then(html => {
+  	      const contenidoDiv = document.getElementById('header');
+  	      contenidoDiv.innerHTML = html;
+  	    });
+  	</script>
+    <!---Contenido--->
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 mt-5 mb-5">
+          <H1>Portafolio Profesional</H1>
+          <div class="accordion" id="myaccordion" data-bs-theme="dark">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  2015-2022 | Desarrollo de Videojuegos para PC y Android
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Durante mi trayectoria, he trabajado en diversos proyectos de desarrollo de videojuegos. A continuación, te menciono algunos de ellos:</p>
+                  <h3>Tankes &#40;Disponible en Video&#41;</h3>
+                  <p>Género: Estilo League Of Legends con Tanques.<br>Objetivo: Destruir el nexo enemigo.<br>Modalidad de Juego: 2vs2 + 2 bots o bots + 1 jugador vs bots.<br>Características: Sistema de puntos, sistema de experiencia, bots estilo minion y bots jugadores.</p>
+                  <h3>SlenderCube &#40;Disponible en GameJolt&#41;</h3>
+                  <p>Género: Estilo Slenderman combinado con Minecraft.<br>Descripción: Un videojuego sencillo que combina elementos de suspenso y exploración.</p>
+                  <h3>ZickZackDance &#40;Disponible en Video, Remake en Desarrollo&#41;</h3>
+                  <p>Descripción: Un juego en el que controlas un cubo que deja rastro mientras se mueve en zigzag al ritmo de la música.</p>
+                  <h3>BallDown &#40;No Disponible&#41;</h3>
+                  <p>Descripción: Un videojuego en el que una bola cae infinitamente y debes evitar tocar objetos para acumular puntos.</p>
+                  <h3>Crazy Roading &#40;No Disponible&#41;</h3>
+                  <p>Descripción: Un juego estilo Crossy Road infinito.</p>
+                  <h3>Copia de Clash Royale Funcional &#40;No Disponible&#41;</h3>
+                  <p>Descripción: Este proyecto contó con integración de Networking para permitir partidas en línea.</p>
+                  <h3>Work Simulator  &#40;No Disponible&#41;</h3>
+                  <p>Descripción: Un prototipo de simulador en el que debes resolver problemas informáticos en diferentes equipos de computadora.</p>
+                  <h3>Horror Project &#40;Sin nombre, posible retomarlo en el futuro&#41;</h3>
+                  <p>Descripción: Un juego de terror en el que debes escapar de un monstruo en una casa. Destacaba por la inteligencia artificial del monstruo, que podía seguirte, escuchar tus pasos y sospechar de objetos fuera de lugar.</p>
+                  <h3>Battle Royale Project &#40;Disponible en Video&#41;</h3>
+                  <p>Descripción: Un prototipo de juego Battle Royale en el que caes de un avión y debes eliminar a los demás jugadores.</p>
+                  <h3>CUBETWIST  &#40;Disponible en versión InDev 2 - Build 2&#41;</h3>
+                  <p>Descripción: Un juego en el que controlas un cubo que puede brincar o hacer movimientos en zigzag. Destaca por contar con un editor 3D, carga y descarga de niveles, y una red social interna para compartir niveles y opiniones.</p>
+                  <p>Estos son solo algunos ejemplos de los proyectos en los que he trabajado en el desarrollo de videojuegos. Cada uno de ellos representa una experiencia única y desafíos creativos.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  2019-2022 | Aplicaciones para PC y Android
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <h4>YuGiOh! - Tools &#40;No Disponible&#41;</h4>
+                  <p>Una app para ayudarte a jugar YuGiOh!</p>
+                  <h4>Conaapps - Conassist &#40;Solo Fotografias&#41;</h4>
+                  <p>Una app para tomar asistencia, para unos alumnos del Conalep</p>
+                  <h4>i-s****er &#40;Confidencial&#41;</h4>
+                  <p>Una aplicación para el internet de las cosas.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Workana (2020-2021)
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Diseño de un closet 3D, Migrar una web de wix a wordpress, animación de maquina con personaje, calculadora de precios, instalación paypal, correo empresarial se va a spam, productos woocomerce, Software para turismo
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+    <!---Footer--->
+    <div id="footer"></div>
+    <script>
+      fetch('./footer.html')
+        .then(response => response.text())
+        .then(html => {
+          const contenidoDiv = document.getElementById('footer');
+          contenidoDiv.innerHTML = html;
+        });
+    </script>
+  </body>
+</html>

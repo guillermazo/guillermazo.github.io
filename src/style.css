@@ -1,20 +1,6 @@
-p, h1, h2 {
-  color: #ffffff; /* Cambia #ffffff por el color blanco que desees */
-}
 body {
-	background-color: black;
+    background-color: black;
 }
-
-.contenedor {
-  text-align: center;
-}
-
-.imagen-centrada {
-  display: block;
-  margin: 0 auto;
-  height: 150px;
-  width: 150px;
-  border-color: black;
-  border-width: 2px;
-  border-radius: 100px;
+p, h1, h2, h3, h4, h5, h6, li, strike {
+    color: white;
 }

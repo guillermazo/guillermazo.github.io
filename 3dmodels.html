@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modelado 3D</title>
+  <meta charset="UTF-8">
+  <!--Bootstrap-->
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.min.js"></script>
+  <!--CustomCSS-->
+  <link rel="stylesheet" type="text/css" href="./src/style.css">
+</head>
+  <body>
+  	<div id="header"></div>
+  	<script>
+  	  fetch('./header.html')
+  	    .then(response => response.text())
+  	    .then(html => {
+  	      const contenidoDiv = document.getElementById('header');
+  	      contenidoDiv.innerHTML = html;
+  	    });
+  	</script>
+    <!---Contenido--->
+    <div class="container mb-5">
+      <div class="row mb-2 mt-2">
+        <div class="col-4"><img class="img-fluid rounded" src="src/Codigo.png" alt=""></div>
+        <div class="col-4"><img class="img-fluid rounded" src="src/Codigo.png" alt=""></div>
+        <div class="col-4"><img class="img-fluid rounded" src="src/Codigo.png" alt=""></div>
+      </div>
+      <div class="row text-center">
+        <div class="col-2"></div>
+        <div class="col-8 ">
+          <H2>Programación y Desarrollo</H2>
+          <H2>¿Qué es la Programación y Desarrollo?</H2>
+          <p>La programación y desarrollo se refiere al proceso de crear aplicaciones web, sitios web, videojuegos y aplicaciones para diferentes plataformas.</p>
+          <H2>Servicios Ofrecidos</H2>
+          <ul>
+            <li>NOTACHADO</li>
+            <li><strike>Desarrollo de Aplicaciones android</strike></li>
+            <li><strike>Creación de aplicaciones para Windows, Linux y Mac.
+            </strike></li>
+            <li><strike>BLABLABLATACHADO</strike></li>
+            <li>Diseño y desarrollo de páginas web.</li>
+            <li>Personalización y edición de páginas web en Wordpress.</li>
+            <li>Programación de software para MicroControladores.</li>
+            <li>Uso de bases de datos con PHP y MySQL.</li>
+            <li>Conexión a servidores en línea.</li>
+            <li><strike>Desarrollo de videojuegos 2D para Android.</strike></li>
+            <li><strike>Creación de videojuegos 3D utilizando motores gráficos.</strike></li>
+          </ul>
+          <h2>Lenguajes de Programación y Marcado</h2>
+          <ul>
+            <li>HTML</li>
+            <li>JSON</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>SQL</li>
+            <li>.NET</li>
+            <li>Visual Basic Script</li>
+            <li>Phyton</li>
+          </ul>
+          <p>En esta área de Programación y Desarrollo, cuento con amplia experiencia y conocimientos en diversos lenguajes de programación y tecnologías para brindar soluciones personalizadas a tus necesidades.</p>
+          <p>Si estás buscando desarrollar una aplicación, página web o videojuego, o si necesitas asesoramiento en proyectos de programación, no dudes en contactarme. Estoy aquí para ayudarte a convertir tus ideas en realidad.</p>
+          <p>Recuerda que la programación y el desarrollo son herramientas poderosas para impulsar tu negocio o proyecto, y estoy comprometido en ofrecerte servicios de calidad y soluciones efectivas.</p>
+          <p>¡Contáctame ahora mismo y comencemos a trabajar juntos en tu próximo proyecto de programación y desarrollo!</p>
+        </div>
+        <div class="col-2"></div>
+      </div>
+      <div class="row mb-2 mt-2">
+        <div class="col-4"><img class="img-fluid rounded" src="src/Codigo.png" alt=""></div>
+        <div class="col-4"><img class="img-fluid rounded" src="src/Codigo.png" alt=""></div>
+        <div class="col-4"><img class="img-fluid rounded" src="src/Codigo.png" alt=""></div>
+      </div>
+    </div>
+    <!---Footer--->
+    <div id="footer"></div>
+    <script>
+      fetch('./footer.html')
+        .then(response => response.text())
+        .then(html => {
+          const contenidoDiv = document.getElementById('footer');
+          contenidoDiv.innerHTML = html;
+        });
+    </script>
+  </body>
+</html>

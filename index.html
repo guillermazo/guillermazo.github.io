@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Plantilla con imagen centrada</title>
+  <title>Guillermo Franco</title>
+  <meta charset="UTF-8">
+  <!--Bootstrap-->
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.min.js"></script>
+  <!--CustomCSS-->
   <link rel="stylesheet" type="text/css" href="./src/style.css">
-  <!---<script>
-    setTimeout(function() {
-      location.reload();
-    }, 10000); // Actualizar la página cada 1000 milisegundos (1 segundo)
-  </script>--->
 </head>
 <body>
+	<div class="container mb-5">
+		<div class="row d-flex align-items-center justify-content-center" style="height: 100vh;">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center align-items-center mb-5 mt-5">
+				<div><h1>Guillermo Franco</h1></div>
+				<div><h2>Ing. Tecnologías de Software</h2></div>
+				<div><a href="portafolio.html"><button class="btn btn-primary">Ver Portafolio</button></a></div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<img class="img-fluid"src="src/RenderizadoRecortado.jpg" />
+			</div>
+		</div>
+	</div>
+	<!--- HEADER NO NECESARIO
 	<div id="contenido"></div>
-
 	<script>
 	  fetch('./header.html')
 	    .then(response => response.text())
 	    .then(html => {
 	      const contenidoDiv = document.getElementById('contenido');
+	      contenidoDiv.innerHTML = html;
+	    });
+	</script>
+	--->
+	<!---Footer--->
+	<div id="footer"></div>
+	<script>
+	  fetch('./footer.html')
+	    .then(response => response.text())
+	    .then(html => {
+	      const contenidoDiv = document.getElementById('footer');
 	      contenidoDiv.innerHTML = html;
 	    });
 	</script>

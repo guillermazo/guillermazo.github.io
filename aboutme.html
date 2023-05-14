@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sobre Mí</title>
+  <meta charset="UTF-8">
+  <!--Bootstrap-->
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.min.js"></script>
+  <!--CustomCSS-->
+  <link rel="stylesheet" type="text/css" href="./src/style.css">
+</head>
+  <body>
+  	<div id="header"></div>
+  	<script>
+  	  fetch('./header.html')
+  	    .then(response => response.text())
+  	    .then(html => {
+  	      const contenidoDiv = document.getElementById('header');
+  	      contenidoDiv.innerHTML = html;
+  	    });
+  	</script>
+    <!---Contenido--->
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 mt-5"><img class="img-fluid rounded-circle" src="src/guillermofrancogallardo.jpg" alt=""></div>
+        <div class="col-4"></div>
+      </div>
+      <div class="row text-center">
+        <div class="col-2"></div>
+        <div class="col-8 ">
+          <H2>Sobre Mí</H2>
+          <p>¡Hola! Soy un estudiante universitario de Ingeniería en Tecnologías de Software. A lo largo de mi carrera, me he enfocado en la programación independiente, el diseño 3D, el Diseño Gráfico y el soporte técnico, adquiriendo experiencia en diversas áreas. Disfruto mucho de mi trabajo y de encontrar soluciones creativas. Sin embargo, me enfrento a un desafío económico y busco sostenerme financieramente mientras continúo expandiendo mis conocimientos.</p>
+          <p>Me apasiona todo lo relacionado con la tecnología y me encanta estar en constante evolución. Mis principales hobbies incluyen hacer música, dar vida a mis ideas en diseños 3D, crear videojuegos de manera espontánea, desarrollar circuitos, dibujar, diseñar, crear sistemas informáticos, jugar videojuegos y estudiar ramas interesantes.</p>
+          <h3>Ambiente Laboral</h3>
+          <p>Actualmente, estoy en proceso de establecer nuevamente mi oficina y estoy adquiriendo equipo de cómputo y buscando colaboradores para trabajar en proyectos conjuntos. ¡Estoy entusiasmado por formar un equipo de trabajo colaborativo y creativo!</p>
+          <p>En cuanto a la cotización de proyectos, me esfuerzo por ser realista y justo. No dudes en solicitar una cotización conmigo, estoy aquí para ayudarte en tus proyectos.
+            <br>Si tienes alguna pregunta o necesitas más información, no dudes en contactarme. ¡Espero tener la oportunidad de colaborar contigo y llevar a cabo proyectos exitosos juntos!
+            </p>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+    <!---Footer--->
+    <div id="footer"></div>
+    <script>
+      fetch('./footer.html')
+        .then(response => response.text())
+        .then(html => {
+          const contenidoDiv = document.getElementById('footer');
+          contenidoDiv.innerHTML = html;
+        });
+    </script>
+  </body>
+</html>
